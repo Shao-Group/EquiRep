@@ -10,7 +10,7 @@ Clone the git repository of EquiRep using the command:
 git clone https://github.com/Shao-Group/EquiRep.git
 ```
 
-Or download the source code of latest EquiRep from [here](https://github.com/Shao-Group/EquiRep/releases/download/v1.0.0/EquiRep-1.0.0.tar.gz). 
+Or download the source code of latest EquiRep from [here](https://github.com/Shao-Group/EquiRep/releases/download/v1.0.0/EquiRep-1.0.0.tar.gz).
 
 Use the following commands to build EquiRep:
 ```
