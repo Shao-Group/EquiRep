@@ -1,6 +1,6 @@
 # Introduction
 
-EquiRep is a tool for finding tandem repeats in sequences. The scripts for reproducing the results are available [here]().
+EquiRep is a tool for finding tandem repeats in sequences. The scripts for reproducing the results of the paper are available [here](https://github.com/Shao-Group/EquiRep-test).
 
 # Installation
 
@@ -46,12 +46,3 @@ cd ./example
 
 An output file named `output.fasta` will appear in the `example` directory.
 
-# Data
-
-All simulated and real data used in the experiments are available in the `data` directory.
-
-`simulated_data`: `dat3` contains the randomly simulated data of different unit lengths and copy numbers. `dat_aax2` contains simulated sequences with 2 recurring kmers. `dat_aax3` contains simulated sequences with 3 recurring kmers. `error_10` and `error_20` inside each of these folders represent error rates of 10% and 20% respectively.
-
-`HOR_data`: `hor_repeats.fasta` contains the 13 Higher Order Repeat sequences from human chromosome 5. `hor_combined.fasta` contains the concatenated sequences (x), concatenated sequences with flanking regions (axa), and error rate of 1%, 5%, 10% applied to them (x_err1, x_err5, x_err10, axa_err1, axa_err5, axa_err10).
-
-`RCA_data`: `RCA_101.fasta` contains selected 101 Nanopore long read sequences from human prostate tissue (GEO, accession number: GSE141693).
