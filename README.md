@@ -1,6 +1,6 @@
 # Introduction
 
-EquiRep is a tool for finding tandem repeats in sequences.
+EquiRep is a tool for finding tandem repeats in sequences. The scripts for reproducing the results are available [here]().
 
 # Installation
 
