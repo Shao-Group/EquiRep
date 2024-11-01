@@ -1,6 +1,6 @@
 # Introduction
 
-EquiRep is a tool for finding tandem repeats in sequences. The scripts for reproducing the results of the paper are available [here](https://github.com/Shao-Group/EquiRep-test).
+EquiRep is a tool for finding tandem repeats in sequences. The data and scripts for reproducing the results of the paper are available [here](https://github.com/Shao-Group/EquiRep-test).
 
 # Installation
 
