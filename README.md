@@ -2,6 +2,10 @@
 
 EquiRep is a tool for finding tandem repeats in sequences. The data and scripts for reproducing the results of the paper are available [here](https://github.com/Shao-Group/EquiRep-test).
 
+# Dependency
+
+EquiRep requires C++11 or later to compile and run successfully. Make sure your compiler supports C++11 by checking its version.
+
 # Installation
 
 Clone the git repository of EquiRep using the command:
