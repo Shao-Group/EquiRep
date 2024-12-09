@@ -23,7 +23,7 @@ mii ee[N], ee2[N];
 // Other graph related variables
 pii ee_info;            // {edgecnt, edgtmax}
 int in[N];              // Used in TOPOsort() and FindMMCycle() for in degree
-int visit[N];           // Used for the DFS in FindCyclePrint()
+int visits[N];           // Used for the DFS in FindCyclePrint()
 int node_weight_sum[N]; // Sum of node weight on the DFS chain,
 // Result variables
 string LU;              // Long unit found (main part)
@@ -912,11 +912,11 @@ void FindMMCycle(int n) {
     while (max_cycle_rate < 0.5 && rb > 0) {
         TOPOsort(rb, n); // Necessary
         int f2 = 0;
-        mst(visit, 0);
+        mst(visits, 0);
         mst(node_weight_sum, 0);
         stk_i = 0;
         for (int i = 0; i < n; ++ i)
-            if (!visit[i] && in[i] > 0 ) {
+            if (!visits[i] && in[i] > 0 ) {
                 stk_i = 0;
                 FindCyclePrint(i, i, rb, 2, 0);
             }
@@ -966,14 +966,14 @@ int TOPOsort(int thres, int n) {
     Given the existence of a cycle, find it and print it
 */
 int FindCyclePrint(int st, int cur, int thres, int curlen, int cur_weight_sum) {
-    visit[cur] = curlen;
+    visits[cur] = curlen;
     stk_rev[cur] = stk_i;
     stk[stk_i ++] = cur;
     cur_weight_sum += node_weight[cur];
     node_weight_sum[cur] = cur_weight_sum;
     for (auto x : ee[cur]) {
         if (x.se >= thres) {
-            if (visit[x.fi] > 1) {
+            if (visits[x.fi] > 1) {
                 vector <pii> cg_tmp;
                 cg_tmp.clear();
                 double cycle_weight = cur_weight_sum - node_weight_sum[x.fi] + node_weight[x.fi];
@@ -993,13 +993,13 @@ int FindCyclePrint(int st, int cur, int thres, int curlen, int cur_weight_sum) {
                     CG = cg_tmp;
                 }
             }
-            else if (!visit[x.fi]) {
+            else if (!visits[x.fi]) {
                 stk2[stk_i - 1] = x.se;
                 FindCyclePrint(st, x.fi, thres, curlen + 1, cur_weight_sum);
             }
         }
     }
-    visit[cur] = 1;
+    visits[cur] = 1;
     -- stk_i;
     return 0;
 }
