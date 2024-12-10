@@ -3,7 +3,7 @@ src/Makefile
 src/Makefile.in
 src/EquiRep-EquiRep.o
 example/output.fasta
-equiRep-1.0.0.tar.gz
+equirep-1.0.0.tar.gz
 aclocal.m4
 autom4te.cache
 compile
