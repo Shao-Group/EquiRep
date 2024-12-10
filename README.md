@@ -1,4 +1,8 @@
 # Introduction
+[![install with bioconda](https://img.shields.io/badge/install%20with-bioconda-brightgreen.svg?style=flat)](http://bioconda.github.io/recipes/equirep/README.html)
+[![Anaconda-Server Badge](https://anaconda.org/bioconda/equirep/badges/downloads.svg)](https://anaconda.org/bioconda/equirep)
+
+# Introduction
 
 EquiRep is a tool for finding tandem repeats in sequences. The data and scripts for reproducing the results of the paper are available [here](https://github.com/Shao-Group/EquiRep-test).
 
@@ -8,17 +12,14 @@ EquiRep requires C++11 or later to compile and run successfully. Make sure your 
 
 # Installation
 
-Clone the git repository of EquiRep using the command:
+EquiRep can be easily installed via 
+[conda](http://bioconda.github.io/recipes/equirep/README.html).
 
-```
-git clone https://github.com/Shao-Group/EquiRep.git
-```
-
-Or download the source code of latest EquiRep from [here](https://github.com/Shao-Group/EquiRep/releases/download/v1.0.0/EquiRep-1.0.0.tar.gz).
+If you wish to install it from source code, download the source code of latest EquiRep from [here](https://github.com/Shao-Group/EquiRep/releases/download/v1.0.0/EquiRep-1.0.0.tar.gz).
 
 Use the following commands to build EquiRep:
 ```
-cd EquiRep/src
+cd EquiRep
 ./configure
 make
 ```

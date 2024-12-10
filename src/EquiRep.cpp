@@ -1,5 +1,17 @@
 // Split more cycles
-#include <bits/stdc++.h>
+// #include <bits/stdc++.h>
+#include <vector>
+#include <string>
+#include <map>
+#include <iostream>
+#include <fstream>
+#include <unordered_map>
+#include <queue>
+#include <algorithm>
+#include <cmath>
+#include <cstring>
+#include <climits>
+
 #define mst(a,b) memset((a),(b),sizeof(a))
 #define psi pair <string, int>
 #define pii pair <int, int>
@@ -81,7 +93,7 @@ int main(int argc, const char * argv[]) {
         cout << "  <output_file_prefix> Prefix for the output FASTA file.\n";
         cout << "Example:\n";
         cout << "  ./EquiRep input.fasta output\n";
-        return 1;
+        return 0;
     }
 
     string fn1 = argv[1];
